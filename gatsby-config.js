@@ -15,12 +15,17 @@ module.exports = {
       age:        24
     }
   },
-  plugins: [`gatsby-plugin-styled-components`,
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `images`,
-      path: `${__dirname}/src/images/`,
-    }
-  }]
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      }
+    },
+  ]
 }
