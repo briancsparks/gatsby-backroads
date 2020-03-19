@@ -4,7 +4,7 @@ import Layout   from '../components/Layout'
 
 export default () => (
     <Layout>
-      Hello world!
+      Hello from BackRoads!
       <Link to="/blog/">
         blog page
       </Link>
